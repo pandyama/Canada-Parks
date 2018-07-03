@@ -1,5 +1,45 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    // - Below is the HTML code for header of this page
+    title  Web Applications 
+    meta(charset="utf-8")
+    link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+    script(type="text/javascript" src="file.js")
+  body
+    #header
+      h1  MAPLE   LEAF    REPORT 
+    #menu
+      ul
+        li
+          a(href="search.php") Home
+        li
+          a(href="") About Us
+        li
+          a(href="") Contact
+        li
+          a(href="Registration.php") Registration
+        li
+          a(href="submission.php") Any Recommendations?
+    form(action="results_sample.php" method="POST")
+      input.search(type="search" name="searchs" label="a" placeholder="Search by name or place" required="")
+      input.button(type="button" value="Search")
+    form(action="results_sample.php" method="POST" label="b")
+      select(name="Ratings")
+        option(value="5 Star") 5 Star
+        option(value="4 Star") 4 Star
+        option(value="3 Star") 3 Star
+        option(value="2 Star") 2 Star
+        option(value="1 Star") 1 Star
+      input(type="submit" name="enter")
+    #location1
+      button(onclick="getLocation()") Your Location
+      p#location  Click above to get your location
+      #map
+    #content
+      p
+        | The exam sleeps opposite the hate.
+        | Our coordinate originates.
+        | The appearance shortens the panel inside each negative leisure.
+    #footer
+      p © Copyright 2016 McMaster University, Hamilton, ON, Canada. All Rights Reserved
