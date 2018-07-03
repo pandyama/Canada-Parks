@@ -1,0 +1,62 @@
+html
+  head
+    title  Web Applications 
+    meta(charset="utf-8")
+    link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+    script(type="text/javascript" src="file.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+  body
+    #header
+      h1  MAPLE   LEAF    REPORT 
+    #menu
+      ul
+        li
+          a(href="search.php") Home
+        li
+          a(href="") About Us
+        li
+          a(href="") Contact
+        li
+          a(href="Registration.php") Registration
+        li
+          a(href="submission.php") Any Recommendations?
+    #register
+      style.
+        input:invalid{
+        background-color: #ffcccc;
+        }
+        input: required{
+        border-color: red;
+        border-width: 1px;
+        }
+      form(method="POST" action="")
+        label.fname
+          | First Name  
+          br
+        input.form-control(name="firstname" type="text" placeholder="")
+        br
+        label.lname
+          | Last Name 
+          br
+        input.form-control(name="lastname" type="text" placeholder="")
+        br
+        label.ename
+          | E-Mail 
+          br
+        input.form-control(name="email" type="text" placeholder="")
+        br
+        label.password
+          | Username 
+          br
+        input.form-control(name="username" type="text" placeholder="")
+        br
+        label.password
+          | Password 
+          br
+        input.form-control(name="password" type="password" placeholder="")
+        br
+        input(type="submit" name="submit" value="SUBMIT")
+    #footer
+      p © Copyright 2016 McMaster University, Hamilton, ON, Canada. All Rights Reserved

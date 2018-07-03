@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var root = require('./routes/root');
+var rootpage = require('./routes/root');
 var users = require('./routes/users');
 
 var app = express();
@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', root);
-app.use('/users', users);
+app.use('/', rootpage);
+app.use('/', rootpage);
 
 app.listen(3003, function () {
   console.log('Example app listening on port 3000!')
