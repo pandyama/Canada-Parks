@@ -1,14 +1,12 @@
 doctype html
 head
-  // - Below is the HTML code for header of this page
   title  Web Applications 
-  meta(charset='utf-8')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(href='/stylesheets/style.css', rel='stylesheet', type='text/css')
-  script(type='text/javascript', src='file.js')
-  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  meta(charset="utf-8")
+  link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+  script(type="text/javascript" src="file.js")
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 .container-fluid
   .header
     h1.text-center  MAPLE &nbsp; LEAF &nbsp; REPORT 
@@ -38,6 +36,18 @@ head
           .input-group-btn
             button.btn.btn-default(type='submit')
               i.glyphicon.glyphicon-search
+form(method="POST" action="")
+  label.fname
+    | Username  
+    br
+  input.form-control(name="firstname" type="text" placeholder="")
+  br
+  label.password
+    | Password 
+    br
+  input.form-control(name="password" type="password" placeholder="")
+  br
+  input(type="submit" name="submit" value="Log In")
   #footer
 footer.page-footer.font-small.blue
   .footer-copyright.text-center.py-3
