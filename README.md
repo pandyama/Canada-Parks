@@ -7,3 +7,13 @@ Tech:
   - Expressjs
   - MongoDB
   - Pug(view engine)
+  
+Current UI Look
+
+REGISTER PAGE </br>
+![1](https://github.com/pandyama/Canada-Parks/blob/master/Capture.PNG)
+----
+
+LOGIN PAGE </br>
+![1](https://github.com/pandyama/Canada-Parks/blob/master/Capture2.PNG)
+----
