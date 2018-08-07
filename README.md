@@ -10,10 +10,10 @@ Tech:
   
 Current UI Look
 
-REGISTER PAGE </br>
+Login Page </br>
 ![1](https://github.com/pandyama/Canada-Parks/blob/master/Capture.PNG)
 ----
 
-LOGIN PAGE </br>
+Register Page </br>
 ![1](https://github.com/pandyama/Canada-Parks/blob/master/Capture2.PNG)
 ----
